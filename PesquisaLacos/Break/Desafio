@@ -1,0 +1,22 @@
+/*Enunciado: Faça um loop em JavaScript que vá de 1 a 50, mas, utilizando o comando break, só exiba no console os 10 primeiros números.
+*/
+
+for (let i = 1; i <= 50; i++) {
+  if (i > 10) {
+    break;
+  }
+  console.log(i);
+}
+
+/* Saída:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
