@@ -1,0 +1,19 @@
+/*Enunciado: Agora, faça um programa em JavaScript, onde há um objeto ‘carro’, com propriedades ‘marca’, ‘modelo’, ‘cor’ e ‘ano’. E, utilizando for…in, deve imprimir na tela cada uma dessas propriedades e seus valores.*/
+
+const carro = {
+  marca: 'Ferrari',
+  modelo: '288 GTO',
+  cor: 'vermelho',
+  ano: '1984'
+};
+
+for (let i in carro) {
+  console.log(i + ' : ' + carro[i]);
+}
+
+/* Saída:
+marca : Ferrari
+modelo : 288 GTO
+cor : vermelho
+ano : 1984
+*/
