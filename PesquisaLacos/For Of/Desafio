@@ -1,0 +1,16 @@
+/*Enunciado: Faça um programa em JavaCript, onde há um array ‘pares’ com todos os números pares de 0 a 11 e faça serem impressos todos os números ímpares de 0 a 11 a partir desse array e um for…of. */
+
+const pares = [0, 2, 4, 6, 8, 10];
+
+for (let i of pares) {
+  console.log(i + 1);
+}
+
+/* Saída:
+1
+3
+5
+7
+9
+11
+*/
