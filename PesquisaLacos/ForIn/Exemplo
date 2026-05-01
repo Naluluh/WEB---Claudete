@@ -1,0 +1,16 @@
+// Cadastro
+
+const cadastro = {
+  nome: 'Maria',
+  idade: 36,
+  telefone: '11 98436-6220'
+};
+
+for (let chave in cadastro) {
+  console.log(chave + ': ' + cadastro[chave]);
+}
+
+/*Saída: 
+nome: Maria
+idade: 36
+telefone: 11 98436-6220 */
