@@ -1,0 +1,30 @@
+/*Enunciado: Faça um programa em JavaScript onde seja criada uma função criarTarefa que simula tarefas assíncronas, retornando uma Promise que resolve uma mensagem após um determinado tempo. Em seguida, crie um array tarefas contendo algumas tarefas com tempos diferentes e utilize um for await...of para exibir no console o resultado de cada tarefa conforme elas forem sendo concluídas. 
+*/
+
+function criarTarefa(mensagem, tempo) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(mensagem);
+    }, tempo);
+  });
+}
+
+async function executarTarefas() {
+  const tarefas = [
+    criarTarefa('Tarefa 1 concluída', 1000),
+    criarTarefa('Tarefa 2 concluída', 2000),
+    criarTarefa('Tarefa 3 concluída', 1500)
+  ];
+
+  for await (const resultado of tarefas) {
+    console.log(resultado);
+  }
+}
+
+executarTarefas();
+
+/* Saída:
+Tarefa 1 concluída
+Tarefa 2 concluída
+Tarefa 3 concluída
+*/
