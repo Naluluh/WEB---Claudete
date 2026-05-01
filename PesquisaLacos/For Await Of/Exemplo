@@ -1,0 +1,42 @@
+// Execução de tarefas assíncronas em sequência usando Promises e async/await
+
+const andarCachorro = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Andou com o cachorro');
+    }, 2000);
+  });
+};
+
+const limparQuarto = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Limpou o quarto');
+    }, 2000);
+  });
+};
+
+const tarefas = [andarCachorro(), limparQuarto()];
+
+async function fazerTarefas(lista) {
+  try {
+    console.log('Iniciando as tarefas uma por uma…');
+
+    for await (let resultado of lista) {
+      console.log(resultado);
+    }
+
+    console.log('Todas as tarefas foram concluídas. Parabéns!');
+  } catch (error) {
+    console.error('Ops! Algo deu errado: ', error);
+  }
+}
+
+fazerTarefas(tarefas);
+
+/* Saída:
+Iniciando as tarefas uma por uma…
+Andou com o cachorro
+Limpou o quarto
+Todas as tarefas foram concluídas. Parabéns!
+*/
