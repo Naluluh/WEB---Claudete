@@ -1,0 +1,20 @@
+// Percorre um array de frutas até encontrar "pera", interrompendo o loop e contando quantos itens foram exibidos
+
+const array = ['maçã', 'banana', 'pera', 'uva', 'ameixa'];
+let contador = 0;
+
+for (let i of array) {
+  if (i === 'pera') {
+    break;
+  }
+  console.log(i);
+  contador += 1;
+}
+
+console.log('frutas: ' + contador);
+
+/* Saída:
+maçã
+banana
+frutas: 2
+*/
