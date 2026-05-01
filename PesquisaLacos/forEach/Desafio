@@ -1,0 +1,12 @@
+/*Enunciado: Agora, que já aprendeu a como utilizar o forEach(), tente resolver o enunciado a seguir: Utilizando forEach(), faça um programa em JavaScript que some 5 unidades a cada elemento de um array com todos os números pares de 0 a 10. Imprima o resultado.
+*/
+
+var pares = [0, 2, 4, 6, 8, 10] // linha 1
+pares.forEach(adicao => {console.log(adicao + 5)});
+
+/* Saída: 5
+7
+9
+11
+13
+15 */
