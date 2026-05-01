@@ -1,0 +1,28 @@
+/*Enunciado: Faça um loop que exiba e indique os números de 0 a 100, indicando quais são pares, e ao fim exiba a quantidade de números totais e a quantidade de números pares, presentes nesse intervalo.
+*/
+let i = 0;
+let par = 0;
+
+while (i <= 100) {
+  if (i % 2 != 0) {
+    i++;
+    continue;
+  }
+
+  console.log(i + " é par");
+  par++;
+  i++;
+}
+
+console.log("Total de números: " + i + "\nTotal de números pares: " + par);
+
+/* Saída:
+0 é par
+2 é par
+4 é par
+...
+98 é par
+100 é par
+Total de números: 101
+Total de números pares: 51
+*/
