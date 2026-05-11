@@ -1,1 +1,74 @@
+/* Corpo da página */
+body{
+    background-color: #112B3C; /* Cor do fundo (azul escuro acinzentado)*/
+    font-family: Arial, "Open Sans", Tahoma, sans-serif; /* Fonte padrão */
+    display: flex; /* Alinhamento dos elementos */
+    justify-content: center; /* Centraliza elemento na horizontal */
+    align-items: center; /* Centraliza elemento na vertical */
+    height: 100vh; /* Altura da página */
+}
 
+/* Título 1 (Painel de Logística) */
+h1{
+    color: #F66B03; /* Cor da fonte (laranja) */
+    margin-bottom: 20px; /* Margem de baixo */
+}
+
+/* Caixa (<div>) */
+.container{
+    text-align: center; /* Centraliza texto */
+    padding: 20px; /* Margem de dentro */
+    background-color: #205375; /* Cor dor fundo (azul escuro acinzentado)*/
+    border-radius: 15px; /* Arredonda bordas */
+    box-shadow: 0 0 10px; /* Sombra */
+    width: 45%; /* Largura */
+    min-height: 80%; /* Altura mínima */
+}
+
+/* Botão */
+button{
+    padding: 20px 30px; /* Margem de dentro */
+    background-color: #F66B03; /* Cor do fundo (laranja) */
+    color: rgb(253, 238, 231); /* Cor da fonte (branco) */
+    border: 2px #fff; /* Borda */
+    border-radius: 5px; /* Arredonda bordas */
+    cursor: pointer; /* Modifica símbolo do cursor */
+    font-size: 25px; /* Tamanho fonte */
+    box-shadow: 0 0 5px; /* Sombra */
+}
+
+/* Botão (ao colocar o cursor em cima) */
+button:hover{
+    background-color: rgb(253, 238, 231); /* Cor do fundo (branco)*/
+    color: #F66B03; /* Cor da fonte (laranja) */
+    padding: 30px 20px; /* Margem de dentro */
+    font-size: 25px; /* Tamanho da fonte */
+}
+
+ /* Caixa do relatório */
+#relatorio{
+  margin-top: 25px; /* Margem de cima */
+  background-color: #2f2f2f; /* Cor do fundo (cinza) */
+  padding: 20px; /* Margem de dentro */
+  border-radius: 8px; /* Arredonda bordas */
+  color: white; /* Cor da fonte (branco) */
+  min-height: 50%; /* Altura mínima */
+}
+
+ /* Lista */
+ul{
+    list-style-type: none;  /* Estilo do símbolo do item da lista (nenhum) */
+    text-align: left; /* Alinha texto para esquerda */
+}
+
+ /* Item da lista */
+.item{
+  padding: 10px; /* Margem de dentro */
+  border-bottom: 1px solid #444 /* Cor da borda (cinza) */;
+}
+
+ /* Mensagem */
+p{
+    margin-top: 20px; /* Margem de cima */
+    font-size: 18px; /* Tamanho da fonte */
+}
