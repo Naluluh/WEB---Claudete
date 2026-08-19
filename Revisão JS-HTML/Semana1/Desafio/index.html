@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Final: A Poção da Jovem Alquimista</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Simulador de Poção</h1>
+        <div class="container">
+            <div class="selecao">
+                <label>Escolha o primeiro ingrediente: </label>
+                <select id="ingrediente1">
+                    <option value="">-- Selecione --</option>
+                    <option value="Raiz de Dragão">Raiz de Dragão</option>
+                    <option value="Orvalho da Manhã">Orvalho de Manhã</option>
+                    <option value="Pó de Fada">Pó de Fada</option>
+                    <option value="Lágrima de Fênix">Lágrima de Fênix</option></select>
+                    <br>
+
+                <label>Escolha o segundo ingrediente: </label>
+                <select id="ingrediente2">
+                    <option value="">-- Selecione --</option>
+                    <option value="Raiz de Dragão">Raiz de Dragão</option>
+                    <option value="Orvalho da Manhã">Orvalho de Manhã</option>
+                    <option value="Pó de Fada">Pó de Fada</option>
+                    <option value="Lágrima de Fênix">Lágrima de Fênix</option></select>
+                    <br>
+
+                <label>Selecione a fase da lua:</label>
+                <select id="luas">
+                    <option value="">-- Selecione --</option>
+                    <option value="crescente">Crescente</option>
+                    <option value="cheia">Cheia</option>
+                    <option value="nova">Nova</option>
+                    </select>  
+                    <br>    
+             <button type="submit" onclick="Alquimia()">Preparar Poção!</button>
+             </div>
+        <div class="pocao">
+            <table>
+                <thead>
+                    <tr><th colSpan ="3" class="titulo">PREPARAÇÃO</th></tr>
+                    <tr id="linhaIng"><th>Ingredientes</th></tr>
+                    <tr id="linhaP"><th>Poção preparada</th></tr>
+                </thead>
+                <tbody id="corpo-tabela"></tbody>
+            </table>
+        </div>
+    </div>
+        <script src="desafio1.js"></script>
+    </body>
+</html>
