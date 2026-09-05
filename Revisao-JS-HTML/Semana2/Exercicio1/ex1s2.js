@@ -56,7 +56,7 @@ linha.appendChild(colunaProduto)
 
 for (produtos in produtos){
     if (produtos.situacao === "Baixo"){
-        colunaSituacao.innerHTML = "<style color="red;">Baixo<style>"}
+        colunaSituacao.innerHTML = "<style color="red">Baixo<style>"}
     else{
         colunaSituacao.innerHTML = "Suficiente"
     }
