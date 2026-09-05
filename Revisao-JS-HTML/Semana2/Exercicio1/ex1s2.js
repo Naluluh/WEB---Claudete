@@ -2,11 +2,11 @@
 
 // Lista de produtos
 const produtos = [
-    { produto: 'caderno', quantidade: 280, situacao: "" },
-    { produto: 'caneta', quantidade: 500, situacao: "" },
-    { produto: 'lápis de cor', quantidade: 19, situacao: "" },
-    { produto: 'borracha', quantidade: 50, situacao: "" },
-    { produto: 'folha sulfite', quantidade: 100, situacao: "" }
+    { produto: 'Caderno', quantidade: 280, situacao: "" },
+    { produto: 'Caneta', quantidade: 500, situacao: "" },
+    { produto: 'Lápis de cor', quantidade: 19, situacao: "" },
+    { produto: 'Borracha', quantidade: 50, situacao: "" },
+    { produto: 'Folha sulfite', quantidade: 100, situacao: "" }
 ];
 
 // Função para verificar a quantidade/situação do estoque
