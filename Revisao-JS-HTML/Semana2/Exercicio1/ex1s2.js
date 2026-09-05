@@ -31,10 +31,6 @@ function Verificar() {
         const colunaProduto = document.createElement("td");
         colunaProduto.textContent = item.produto;
 
-        // Cria coluna da quantidade
-        const colunaQuantidade = document.createElement("td");
-        colunaQuantidade.textContent = item.quantidade;
-
         // Cria coluna da situação
         const colunaSituacao = document.createElement("td");
 
@@ -46,12 +42,12 @@ function Verificar() {
 
         // Adiciona as colunas na linha
         linha.appendChild(colunaProduto);
-        linha.appendChild(colunaQuantidade);
         linha.appendChild(colunaSituacao);
 
         // Adiciona a linha na tabela
         corpoDaTabela.appendChild(linha);
     }
 
+    // Exibe no console as informações
     console.log(produtos);
 }
